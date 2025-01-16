@@ -95,7 +95,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+#dist
 
 # Gatsby files
 .cache/
@@ -148,3 +148,17 @@ docs/.vitepress/cache/
 /cypress/fixtures/user-dir/.flows.json.backup   
 /cypress/screenshots
 /cypress/downloads
+
+#
+cypress/
+docs/
+examples/
+test/
+ui/
+cypress.config.js
+package-lock.json
+pwa-assets.config.js
+test.js
+vite.config.js
+yarn.lock
+README.md
