@@ -12,7 +12,7 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Custom
 node_modules
-dist
+#dist
 dist-ssr
 *.local
 
@@ -148,17 +148,3 @@ docs/.vitepress/cache/
 /cypress/fixtures/user-dir/.flows.json.backup   
 /cypress/screenshots
 /cypress/downloads
-
-#
-cypress/
-docs/
-examples/
-test/
-ui/
-cypress.config.js
-package-lock.json
-pwa-assets.config.js
-test.js
-vite.config.js
-yarn.lock
-README.md
