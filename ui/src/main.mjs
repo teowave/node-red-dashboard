@@ -21,7 +21,7 @@ import * as directives from 'vuetify/directives'
 import { VNumberInput } from 'vuetify/labs/VNumberInput'
 import { VTreeview } from 'vuetify/labs/VTreeview'
 import { VTimePicker } from 'vuetify/labs/VTimePicker'
-
+import { VCalendar, VCalendarDay, VCalendarHeader, VCalendarMonthDay } from 'vuetify/labs/VCalendar'
 import './stylesheets/common.css'
 
 import store from './store/index.mjs'
@@ -60,6 +60,10 @@ const theme = {
 const vuetify = createVuetify({
     components: {
         ...components,
+        VCalendar,
+        VCalendarDay,
+        VCalendarHeader,
+        VCalendarMonthDay,
         VNumberInput,
         VTreeview,
         VTimePicker
