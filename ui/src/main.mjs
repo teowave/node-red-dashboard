@@ -251,7 +251,7 @@ fetch('_setup')
             .use(store)
             .use(vuetify)
             .use(router)
-            .use(VueCal)
+        app.component('VueCal', VueCal)
 
         const head = createHead()
         app.use(head)
