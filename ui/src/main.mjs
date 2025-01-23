@@ -21,11 +21,15 @@ import * as directives from 'vuetify/directives'
 import { VNumberInput } from 'vuetify/labs/VNumberInput'
 import { VTreeview } from 'vuetify/labs/VTreeview'
 import { VTimePicker } from 'vuetify/labs/VTimePicker'
-import { VCalendar, VCalendarDay, VCalendarHeader, VCalendarMonthDay } from 'vuetify/labs/VCalendar'
+// import { VCalendar, VCalendarDay, VCalendarHeader, VCalendarMonthDay } from 'vuetify/labs/VCalendar'
 import './stylesheets/common.css'
 
 import store from './store/index.mjs'
 import { useDataTracker } from './widgets/data-tracker.mjs' // eslint-disable-line import/order
+
+// vue-cal
+import VueCal from 'vue-cal'
+import 'vue-cal/dist/vuecal.css'
 
 // Retrieve the "Default" theme from cache
 function retrieveDefaultThemeFromCache () {
@@ -62,11 +66,11 @@ const vuetify = createVuetify({
         ...components,
         VNumberInput,
         VTreeview,
-        VTimePicker,
-        VCalendar,
-        VCalendarDay,
-        VCalendarHeader,
-        VCalendarMonthDay
+        VTimePicker
+        // VCalendar,
+        // VCalendarDay,
+        // VCalendarHeader,
+        // VCalendarMonthDay
     },
     directives: {
         ...directives,
@@ -247,6 +251,7 @@ fetch('_setup')
             .use(store)
             .use(vuetify)
             .use(router)
+            .use(VueCal)
 
         const head = createHead()
         app.use(head)
