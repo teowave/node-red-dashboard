@@ -24,7 +24,7 @@ export default defineConfig({
             manifest: false,
 
             injectManifest: {
-                maximumFileSizeToCacheInBytes: 4000000,
+                maximumFileSizeToCacheInBytes: 7000000,
                 globPatterns: ['**/*.{js,css,html,svg,png,ico,ttf,eot,woff,woff2}']
             },
 

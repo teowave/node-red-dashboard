@@ -27,9 +27,7 @@ import './stylesheets/common.css'
 import store from './store/index.mjs'
 import { useDataTracker } from './widgets/data-tracker.mjs' // eslint-disable-line import/order
 
-// vue-cal
-import VueCal from 'vue-cal'
-import 'vue-cal/dist/vuecal.css'
+
 
 // Retrieve the "Default" theme from cache
 function retrieveDefaultThemeFromCache () {
@@ -251,7 +249,6 @@ fetch('_setup')
             .use(store)
             .use(vuetify)
             .use(router)
-        app.component('VueCal', VueCal)
 
         const head = createHead()
         app.use(head)

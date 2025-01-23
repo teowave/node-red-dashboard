@@ -39,6 +39,9 @@
 </template>
 
 <script>
+import VueCal from 'vue-cal'
+import 'vue-cal/dist/vuecal.css'
+
 import { mapState } from 'vuex'
 import { markRaw } from 'vue' // eslint-disable-line import/order
 import { initialise as initEditMode } from './EditTracking.js'
@@ -54,7 +57,9 @@ export default {
     name: 'App',
     components: {
         DashboardLoading,
-        PWABadge
+        PWABadge,
+        // eslint-disable-next-line vue/no-unused-components
+        VueCal
     },
     inject: ['$socket'],
     data () {
